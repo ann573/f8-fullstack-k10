@@ -1,0 +1,77 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+.form_container {
+    width: 42.44444%; /* Độ rộng của form container */
+    height: 80%;
+  }
+form{
+    background-color: rgba(194, 192, 192, 0.958);
+    text-align: left;
+}
+.header
+{
+    margin-bottom: 30px;
+}
+label
+{
+    font-weight: bold;
+    font-size: 11pt
+}
+.content
+{
+    padding: 10px 10px 30px;
+}
+p
+{
+    margin: 10px 0 10px;
+    margin-right: 100px;
+    line-height: 1.3;
+}
+span 
+{
+    color: gray;
+    font-size: 12pt
+}
+.row
+{
+    margin: 20px 0 ;
+}
+input, select
+{
+    padding: 0 0 0 10px;
+    min-width: 280px;
+    height: 32px;
+    border: none;
+    margin-top: 3%;
+    border-radius: 2px;
+}
+.row :first-child div
+{
+   margin-right: 40px;  
+}
+Button{
+    background-color: rgb(33, 170, 33);
+    color: white;
+    padding: 16px;
+    text-align: center;
+    width: 95%;
+    border: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 2px;
+}
+select
+{
+    color: gray;
+}

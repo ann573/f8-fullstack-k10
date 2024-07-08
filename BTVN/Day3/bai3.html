@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#">
+        <table>
+            <tr>
+                <td><label for="username">Username:</label></td>
+                <td><input type="text" name="username" id="username"></td>
+            </tr>
+            <tr>
+                <td> <label for="password">Password:</label></td>
+                <td><input type="password" name="password" id="password"></td>
+            </tr>
+            <tr>
+                <td><label for="websever">Web sever:</label></td>
+                <td><select name="websever" id="websever">
+                    <option value="0">- Choose a server -</option>
+                    <option value="1"> Server 1</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td> <label>Plesae specify <br> your role: </label></td>
+                <td><div><label><input type="radio" name="role" id="role" value="amdin"> Admin</label></div>
+                    <div><label><input type="radio" name="role" id="role" value="engineer"> Engineer</label></div>
+                    <div><label><input type="radio" name="role" id="role" value="manager"> Manager</label></div>
+                    <div><label><input type="radio" name="role" id="role" value="guest"> Guest</label></div></td>
+            </tr>
+            <tr>
+                <td><label>Single Sign-on <br> to the following:</label></td>
+                <td><div><label><input type="checkbox" name="mail" value="mail">Mail</label></div>
+                <div><label><input type="checkbox" name="mail" value="payroll">Payroll</label></div>
+                <div><label><input type="checkbox" name="mail" value="self">Self-service</label></div></td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <button>Login</button>
+                    <button>Reset</button>
+                </td>
+            </tr>
+        </table>    
+    </form>
+</body>
+</html>

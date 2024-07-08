@@ -1,0 +1,51 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.form_container
+{
+    background-color: rgb(178, 176, 176);
+}
+form 
+{
+    margin: 15px 40px 40px 15px;    
+}
+h1
+{
+    font-size: 19pt;
+    margin-bottom: 10px;
+}
+h1+input
+{
+    margin-right: 50px ;
+}
+input
+{
+    padding: 3px 0 3px 5px;
+    border-radius: 3px solid gray ;
+}
+.form_container div input 
+{
+    margin: 20px 0;
+}
+.footer
+{
+    margin: 15px 0 30px 0;
+}
+.footer button 
+{
+    background-color: rgba(70, 66, 66, 0.897);
+    color: white;
+    padding: 3px;
+    border: none;
+    border-radius: 3px;
+    font-weight: 700;
+}

@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+.cal_container
+{
+    width: 30%;
+    height: 70%;
+}
+table
+{
+    margin: 10px;
+    border-collapse: collapse; /* để các đường viền giữa các ô không bị lặp lại */
+
+}
+.expression
+{
+    text-align: right;
+    padding: 20px ;
+    font-size: 25pt;
+    letter-spacing: 7px;
+}
+td
+{
+    padding: 30px 0;
+    font-size: 29pt;
+    background-color: rgb(212, 231, 243);
+    border: 2px solid black;
+    text-align: center;
+    font-weight: bold;
+    font-weight: 600;
+}
