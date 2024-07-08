@@ -13,6 +13,7 @@ body {
 .form_container
 {
     background-color: rgb(178, 176, 176);
+    border-radius: 5px;
 }
 form 
 {
@@ -30,7 +31,12 @@ h1+input
 input
 {
     padding: 3px 0 3px 5px;
-    border-radius: 3px solid gray ;
+    border: none;
+    border-radius: 3px;
+}
+input:focus
+{
+    outline: none;
 }
 .form_container div input 
 {
@@ -44,7 +50,7 @@ input
 {
     background-color: rgba(70, 66, 66, 0.897);
     color: white;
-    padding: 3px;
+    padding: 4px;
     border: none;
     border-radius: 3px;
     font-weight: 700;
