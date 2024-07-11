@@ -1,0 +1,24 @@
+input[id='red']:checked ~p
+{
+    color: red;
+} 
+input[id='blue']:checked ~p
+{
+    color: blue;
+} 
+input[id='green']:checked ~p
+{
+    color: green;
+} 
+input[id='red']:checked + label
+{
+    color: red;
+} 
+input[id='blue']:checked + label
+{
+    color: blue;
+} 
+input[id='green']:checked + label
+{
+    color: green;
+} 

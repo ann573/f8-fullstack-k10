@@ -1,0 +1,38 @@
+/* 
+    Cú pháp phần tử giả selector:: tenphantu {
+        Code CSS
+    }
+- before
+- after
+- first-line
+- first-letter
+- selection
+- placeholder
+*/
+
+body
+{
+    height: 2000px;
+}
+h1::before
+{
+    content: "<";
+}
+h1::after
+{
+    content: ">";
+}
+p::first-letter
+{
+    color: red;
+}
+p::selection
+{
+    background-color: black;
+    color: red;
+}
+input::placeholder
+{
+    color: red;
+
+}

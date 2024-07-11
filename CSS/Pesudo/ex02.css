@@ -1,0 +1,25 @@
+/* 
+    Lớp giả (Trạng thái)
+    Cú pháp:
+    selector:tenlopgia
+    {}
+- hover 
+- active 
+- focus -> chi co tac dung voi form 
+- checked 
+- disabled
+- not
+- first-child
+- last-child 
+- first-of-type
+- last-of-type
+- nth-child
+- nth-of-type
+- valid
+*/
+/* .list-item1 li:first-child {
+    color: red;
+} */
+h2:nth-child(1){
+    color: red;
+}

@@ -1,0 +1,8 @@
+ul
+{
+    list-style: none;
+}
+li::before {
+    content: attr(data-icon);
+    margin-right: 5px;
+}

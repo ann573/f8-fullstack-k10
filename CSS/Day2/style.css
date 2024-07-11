@@ -1,0 +1,30 @@
+/* 
+    Attribute Selector
+    1. [tenthuoctinh] => Chon tat ca the html co thuoc tinh
+        a[target]{
+        color: red;
+}
+    2. [tenthuoctinh="giatri"] Chon tat ca the html co thuoc tinh = gia tri
+        a[target="_blank"]{
+        color: red;
+        }
+    3. [tenthuoctinh^="giatri"] => Chon tat ca the html co gia tri thuoc tinh bat dau bang
+    gia tri
+        a[href^="https://fullstack.edu.vn"]{
+        color: red;
+        }
+    4. [tenthuoctinh$="giatri"] => Chon tat ca the html co gia tri
+    thuoc tinh ket thuc bang giatri
+    a[href$=".vn"]{
+    color: red;
+    }
+    5. [tenthuoctinh*="giatri"] => Chon tat ca the html co thuoc tinh chua gia tri
+        a[href*="fullstack"]{
+        color: red;
+    }
+    6. [tenthuoctinh~="giatri"] => Chon tat ca the html co thuoc tinh chua gia tri la 1 tu
+    */
+
+[class*="title"]{
+    color: red;
+}
