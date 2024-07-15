@@ -1,0 +1,64 @@
+/* 
+color: Doi mau van ban
+Màu sắc: Độ trong suốt của màu
+transparent: Màu trong suốt
+Giá trị kế thừa (Tồn tại ở mọi thuộc tính)
+- initial -> gia tri mac dinh cua trinh duyet
+- inherit -> kế thừa giá trị của thành phần 
+currentColor: Lay theo mau hien tai
+
+Họ font: 
+sans-serif ==> họ font không chân
+serif ==> họ font có chân`
+*/
+@font-face {
+    font-family: "SVN Fontbox";
+    src: url(./font/Lato-BoldItalic.ttf);
+}
+@font-face {
+    font-family: Lato;
+    src: url(./font/Lato-Regular.ttf);
+    font-weight: 300;
+}
+@font-face {
+    font-family: Lato;
+    src: url(./font/Lato-Light.ttf);
+    font-wetght: 400;
+}
+@font-face {
+    font-family: Lato;
+    src: url(./font/Lato-Bold.ttf);
+    font-wetght: 700;
+}
+@font-face {
+    font-family: Lato;
+    src: url(./font/Lato-Italic.ttf);
+    font-weight: 400;
+    font-style: italic;
+}
+@font-face {
+    font-family: Lato;
+    src: url(./font/Lato-LightItalic.ttf);
+    font-weight: 300;
+    font-style: italic;
+}
+@font-face {
+    font-family: Lato;
+    src: url(./font/Lato-BoldItalic.ttf);
+    font-weight: 700;
+    font-style: bold;
+}
+body
+{
+    font-family: Lato;
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-style: italic;
+    text-align: justify;
+    text-align-last: center;
+}   
+.content
+{
+    border: 1px solid red;
+    word-wrap: break-word;
+}

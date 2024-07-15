@@ -1,0 +1,24 @@
+/* 
+    Thuộc tính background ==> Thay đổi nền của thành phần html 
+    - background-color
+    - background - image
+    - background - repeat
+    - background - position
+    - background - size
+    - background - attachment
+    - background
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+body
+{
+    height: 100vh;
+    background-color: rgb(153, 72, 55);
+    background: url(https://fastly.picsum.photos/id/656/500/300.jpg?hmac=8pReEai2Os1-i3vsOYyjiJFGQil-D_OGu1KC8t35uSo);
+    background-repeat: no-repeat;
+    background-position: center;
+}

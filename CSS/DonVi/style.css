@@ -1,0 +1,21 @@
+/*
+Don vi trong CSS
+1. Tuyet doi
+- pixel (px)
+- point (pt). 1pt = 1.3333333333px
+2. Tuong doi 
+- em ---> Tỉ lệ với thành phần cha
+- rem --> tỉ lệ với trình duyệt
+gia tri html: font-size: 62.5%
+- % ---> Tỉ lệ với thành phần cha
+- vh ---> Tỉ lệ với chiều cao của viewport
+- vw  ---> Tỉ lệ với chiều rộng của viewport
+ */
+.box 
+{
+    font-size: 20px;
+}
+p 
+{
+    
+}
