@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+    <link rel="stylesheet" href="bai1.css">
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="content_container">
+      <h2 class="lobster-regular">Hey there</h2>
+      <p>
+        <span>We'd like to hear from you.</span>
+        Send us your message or just say hi with our<br>contact form or directly via phone, we love to chat.
+      </p>
+    <form action="#">
+        <div class="input">
+            <i class="ri-user-line"></i><input type="text" placeholder="Your name" name="name">
+        </div>
+        <div class="input">
+            <i class="ri-mail-line"></i><input type="email" placeholder="your@domain.com" name="email">
+        </div>
+        <div class="input">
+            <i class="ri-phone-line"></i><input type="text" placeholder="+44 00 123" name="phone_number">
+        </div>
+        <div class="input">
+            <i class="ri-book-3-line"></i><select name="subject">
+                <option value="none">Subject</option>
+                <option value="math">Math</option>
+                <option value="history">History</option>
+            </select>
+        </div>
+        <div class="input">
+            <i class="ri-chat-2-line icon_textarea"></i><textarea name="message" cols="40" rows="10" placeholder="Message" ></textarea>
+        </div>
+        <div class="form_footer">
+            <input type="checkbox" name="copy" id="coppy">
+            <label for="coppy">
+                <span class="checkmark"></span>
+                <span class="coppy_message">Send me a copy of this message</span>
+            </label>
+            <button>Send</button>
+        </div>
+    </form>
+    </div>
+  </body>
+</html>
