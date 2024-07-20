@@ -70,6 +70,9 @@ form
 .input input:hover, 
 .input select:hover, 
 .input textarea:hover,
+.input input:focus, 
+.input select:focus, 
+.input textarea:focus,
 .input input:active,
 textarea:active
 {
