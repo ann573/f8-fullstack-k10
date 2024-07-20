@@ -1,0 +1,26 @@
+/* 
+    Margin: căn lề 
+    Đơn vị % ==> Tỷ lệ theo width của thẻ cha không hỗ trợ top, bottom với thẻ inline
+    có giá trị auto, có giá trị âm
+    
+    * Thu hẹp lề 
+    TH1: (chỉ tính với top và bottom)
+    Trái dấu: Tổng 2 số
+    Cùng dấu dương ==> Lấy giá trị lớn hơn
+    Cùng dấu âm ==> Lấy giá trị nhỏ hơn
+
+    TH2: Phần tử lồng nhau
+    C1: dùng border
+    C2: display
+*/
+.banner 
+{
+    background-color: green;
+    color: #fff;
+}
+span 
+{
+    display: block;
+    font-size: 2rem;
+    margin: 30px 0;
+}

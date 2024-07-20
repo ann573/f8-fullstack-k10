@@ -1,21 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Lobster+Two:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     outline: none;
 }
+body 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .content_container
 {
-    /* width: 33%; */
+    width: 530px;
     margin: 1rem;
+    text-align: justify;
+    border: 1px dotted black;
+    padding: 1rem 2rem 1rem 3rem;
 }
 h2
 {
     margin-bottom: 1rem;
+    font-family: "Lobster";
+    font-size: 3rem;
+    opacity: .8;
 }
 p
 {
     /* margin-bottom: 1rem; */
+    font-family: "Lato";
+    font-size: .9rem;
+    margin-right: 1rem;
 }
 span
 {
@@ -24,62 +41,123 @@ span
 form 
 {
     margin-top: 1rem;
+    font-family: "Lato";
 }
 .input
 {
-    width: 50%;
-    margin: 1rem 0;
+    max-width: 25rem;
+    margin: .5  rem 0;
+    position: relative;
     /* padding: .1rem;
     border: 1px solid #dddddd; */
 }
-.input i
+.input_textarea
+{
+    height: 10rem
+}
+.input .input_icon i:not(.star)
 {
     background-color: #dddddd;
-    padding: .7rem;
+    padding: .68rem .7rem .68rem;
     color: white;
 }
 .input input
 {
-    padding: .75rem 1rem .55rem ;
-    padding-right: 10.3rem;
+    width: 100%;
+    padding: .75rem 1rem .55rem;
+    padding-right: 2rem;
     border: 1px solid #dddddd;
+    
+}
+.input:hover input, .input:hover select, .input:hover textarea ,.input input:active, textarea:active
+{
+    border: 1px solid #333333;
+}
+.input:hover .input_icon i , .input input:focus + .input_icon i, textarea:focus + .input_icon i
+{
+    background-color: #333333;
+}
+.input input[name="name"]:focus ~ .input_icon i
+{
+    position: relative;
+    left: -8rem;
+    background-color: #333333;
+}
+input[type="email"]:focus ~ .input_icon i
+{
+    position: relative;
+    left: -7.96rem;
+    background-color: #333333;
+}
+input[name="phone_number"]:focus ~ .input_icon i
+{
+    position: relative;
+    left: -11.15rem;
+    background-color: #333333;
+}
+select:focus ~ .input_icon i
+{
+    position: relative;
+    left: -8.6rem;
+    background-color: #333333;
+}
+textarea:focus ~ .input_icon i
+{
+    position: relative;
+    left: -9.05rem;
+    background-color: #333333;
 }
 .input input::placeholder, textarea::placeholder
 {
     color: #aeaeae;
 }
+.input_icon
+{
+    display: inline-block;
+    position: relative;
+    /* left: -10rem; */
+    bottom: 1.85rem;
+}
 .input select 
 {
-    padding-top: .7rem ;
-    padding-bottom: .55rem;
+    width: 100%;
+    padding-top: .83rem ;
+    padding-bottom: .52rem;
     padding-left: 1rem;
-    padding-right: 16.3rem;
+    /* padding-right: 13rem; */
     /* padding: .7rem, 16.3rem, .55rem, 1rem ; */
     border: 1px solid #dddddd;
     color: #aeaeae;
     text-align: left;
+    appearance: none;
 }
-
+input, select, textarea
+{
+    margin-left: 2.4rem;
+}
 textarea
 {
     resize: none;
     border: 1px solid #dddddd;
     padding: 1rem;
+    padding-right: 1.3rem;
 }
 .icon_textarea
 {
     display: inline-block;
     position: relative;
-    top: -10rem;
+    top: -9.96rem;
     height: 11.6rem;
 }
 .form_footer
 {
-    margin-top: -10rem;
+    margin-top: 3rem;
+    margin-left: -2.6rem;
+    font-family: "Lato";
 }
 button
 {
-    margin-left: 4.5rem ;
+    margin-left: 3.8rem ;
     padding: .5rem 2rem;
     color: white;
     background-color: red;
@@ -99,7 +177,7 @@ button
 #coppy +label
 {
     position: relative;
-    margin-left: -1rem;
+    margin-left: -.6rem;
     top: .4rem;
 }
 .coppy_message
@@ -122,7 +200,7 @@ button
 }
   
   /* Style the checkmark/indicator */
-    .checkmark:after {
+.checkmark:after {
     left: 6px;
     width: 5px;
     height: 10px;
@@ -132,4 +210,63 @@ button
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
 }
-  
+.star 
+{
+    color: #aeaeae;
+    font-size: .8rem;
+    position: absolute;
+    /* left: 22.5rem; */
+    right: -1.5rem;
+    top: .8rem;
+}
+.delete
+{
+    color: #aeaeae;
+    position: absolute;
+    right: -1.4rem;
+    top: .6rem;
+    display: none;
+}
+.notification
+{
+    background-color: #333333;
+    display: inline-block;
+    color: white;
+    font-size: .8rem;
+    padding: .8rem 1rem;
+    z-index: 3;
+    display: inline-block;
+    position: relative;
+    top: -5rem; 
+    left: 3rem;
+    display: none;
+}
+.notification::after
+{
+    content: "";
+    border: 10px solid #333333;
+    border-color: #333333 transparent transparent transparent;
+    position: absolute;
+    top: 2.4rem;
+    left: .3rem;
+}
+textarea + .notification 
+{
+    top: -15rem;
+}
+input:focus ~ .delete, textarea:focus ~ .delete
+{
+    display: inline;
+}
+input:focus  ~ i , textarea:focus ~i
+{
+    display: none;
+}
+input:focus + .notification, select:focus + .notification , textarea:focus +.notification
+{
+    display: inline;
+}
+input:active + .notification, select:active + .notification , textarea:active +.notification
+{
+    display: inline;
+}

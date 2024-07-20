@@ -1,0 +1,23 @@
+/* 
+border:  Thiết lập viền cho phần tử
+- width
+- style
+- color 
+
+Cú pháp mở rộng
+- border-{side}-width
+- border-{side}-style
+- border-{side}-color
+(side): top | right | bottom | left
+*/
+.box 
+{
+    /* border-width: 5px ;
+    border-style: solid;
+    border-color: blueviolet ; */
+    border-top: 5px solid green;
+    border-left: 5px solid rgb(124, 128, 0);
+    border-right: 5px solid red;
+    border-bottom: 5px solid blue;
+
+}

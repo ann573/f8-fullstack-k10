@@ -6,7 +6,7 @@
     - background - position
     - background - size
     - background - attachment
-    - background
+    - background: color image repeat position / size attachment
 */
 *{
     margin: 0;
@@ -16,9 +16,10 @@
 }
 body
 {
-    height: 100vh;
-    background-color: rgb(153, 72, 55);
-    background: url(https://fastly.picsum.photos/id/656/500/300.jpg?hmac=8pReEai2Os1-i3vsOYyjiJFGQil-D_OGu1KC8t35uSo);
-    background-repeat: no-repeat;
-    background-position: center;
+    /* background-size: 100%;
+    height: 2000px; */
+    background:  #000 url(https://fastly.picsum.photos/id/656/500/300.jpg?hmac=8pReEai2Os1-i3vsOYyjiJFGQil-D_OGu1KC8t35uSo)
+    no-repeat 0 0 /100% ;
+    /* background-repeat: no-repeat;
+    background-attachment: fixed;    */
 }

@@ -1,0 +1,26 @@
+.box
+{
+    width: 0;
+    height: 0;
+    border: 50px solid;
+    border-color: red green blue yellow;
+    border-top-color: transparent;
+    /* border-left-color: transparent; */
+    border-right-color: transparent;
+    /* border-top-width: 0; */
+}
+.btn
+{
+    color: green;
+    padding: 1rem;
+    border: 1px solid green;
+    background: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+.btn:hover
+{
+    background-color: green;
+    color: #fff;
+    border-radius: 50%;
+}

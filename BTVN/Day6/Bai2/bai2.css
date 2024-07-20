@@ -1,0 +1,103 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html 
+{
+    font-size: 62.5%;
+}
+body
+{
+    font-size: 1.6rem;
+    height: 90vh;
+    background-color: #ebf5fe;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto";
+}
+.content_container {
+  display: flex;  /* Sử dụng flexbox để các box được hiển thị trên cùng một dòng */
+  flex-wrap: wrap; 
+  width: 70%;
+}
+
+.box {
+  width: calc(33.33% - 20px); /* Độ rộng của mỗi box, tính toán để có 3 box trên một dòng */
+  margin: 10px; /* Khoảng cách giữa các box */
+  background-color: #ffffff; /* Màu nền của box */
+  padding: 20px; /* Khoảng cách bên trong của box */
+  border-radius: 1rem;
+}
+h3 
+{
+    line-height: 1.4;
+    opacity: .8;
+}
+.icon
+{
+    display: inline-block;
+    font-size: 2.5rem;
+    position: relative;
+    bottom: 1rem;
+    margin-right: 1rem;
+    /* border-radius: 50%;
+    background-color: #e4656f;
+    color: white;
+    padding: 1rem; */
+}
+.icon i 
+{
+    padding: 1rem;
+    border-radius: 50%;
+    background-color: #e4656f;
+    color: white;
+}
+.title
+{
+    display: inline-block;
+}
+p
+{
+    color: #666666;
+    margin: 1rem 0;
+    font-size: 1.5rem;
+}
+a
+{
+    display: inline-block;
+    margin: 2rem 0 1rem;
+    text-decoration: none;
+    font-weight: 700;
+    color: #3c71ec;
+}
+.box:first-of-type .icon i 
+{
+    background-image: linear-gradient(to right, #e4656f, #e4917c);
+}
+.box:nth-of-type(2) .icon i 
+{
+    background-image: linear-gradient(to right, #50a6a4, #79d6a0);
+}
+.box:nth-of-type(3) .icon i 
+{
+    background-image: linear-gradient(to right, #e59237, #dbbd7b);
+}
+.box:nth-of-type(4) .icon i 
+{
+    background-image: linear-gradient(to right, #336ccf, #698df0);
+}
+.box:nth-of-type(5) .icon i 
+{
+    background-image: linear-gradient(to right, #7e2dd1, #bc75e6);
+}
+.box:nth-of-type(6) .icon i 
+{
+    background-image: linear-gradient(to right, #6e9031, #9dc171);
+}
+.box:hover
+{
+    border: 1px solid red;
+}
