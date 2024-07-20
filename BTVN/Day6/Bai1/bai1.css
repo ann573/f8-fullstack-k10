@@ -53,7 +53,7 @@ form
 }
 .input_textarea
 {
-    height: 10rem
+    max-height: 8rem;
 }
 .input .input_icon i:not(.star)
 {
@@ -69,11 +69,14 @@ form
     border: 1px solid #dddddd;
     
 }
-.input:hover input, .input:hover select, .input:hover textarea ,.input input:active, textarea:active
+.input:hover input , .input:hover select, .input textarea:hover ,.input input:active, textarea:active
 {
     border: 1px solid #333333;
 }
-.input:hover .input_icon i , .input input:focus + .input_icon i, textarea:focus + .input_icon i
+.input:not(.input_textarea):hover .input_icon i, 
+.input_textarea textarea:hover ~ .input_icon i  , 
+.input input:focus + .input_icon i, 
+textarea:focus + .input_icon i
 {
     background-color: #333333;
 }
@@ -151,13 +154,13 @@ textarea
 }
 .form_footer
 {
-    margin-top: 3rem;
+    margin-top: 5.5rem;
     margin-left: -2.6rem;
     font-family: "Lato";
 }
 button
 {
-    margin-left: 3.8rem ;
+    margin-left: 7.3rem ;
     padding: .5rem 2rem;
     color: white;
     background-color: red;
