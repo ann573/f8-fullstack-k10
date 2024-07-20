@@ -15,15 +15,16 @@ header
 img {
     width: 20vh;
 }
-.category
+.btn_category
 {
     padding: .8rem;
-    background-color: #f5f5f5;
+    background-color: #7572725b;
     border-radius: 1rem ;
     font-size: .8rem;
     font-weight: 600;
     margin-left: .8rem ;
     cursor: pointer;
+    border: none;
 }
 ul
 {
@@ -42,7 +43,7 @@ a
     color: black;
     font-weight: 600;
 }
-button
+button:not(.btn_category)
 {
     position: absolute;
     right: 1em;

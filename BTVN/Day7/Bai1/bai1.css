@@ -1,0 +1,91 @@
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap);
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans";
+}
+/* body
+{
+    display: flex;
+    justify-content: center;
+} */
+nav
+{
+    width: 80vw;
+    margin-top: 3rem ;
+    margin-left: 6rem;
+
+}
+.nav
+{
+    display: flex;
+    list-style: none;
+    position: relative;
+}
+a, .sub_nav
+{
+    color: #666;
+    text-decoration: none;
+    padding: .44rem .36rem;
+    cursor: pointer;
+}
+li:not(.none,.drop_nav_menu)
+{
+    padding: .8rem;
+    border-left: 1px solid #666;
+    border-top: 1px solid #666;
+    border-bottom: 1px solid #666;
+}
+.none
+{
+    width: 36vw;
+    border: 1px solid #666;
+}
+.nav li:not(.drop_nav_menu):last-child
+{
+    border-right: 1px solid #666;
+}
+.drop_menu li:nth-child(2)
+{
+    border-top: .5px solid rgba(102, 102, 102, 0.251);
+    border-bottom: .5px solid rgba(102, 102, 102, 0.251);
+}
+.drop_menu
+{
+    list-style: none;
+    display: none;
+    position: absolute;
+    top: 3.6rem;
+    left: 12.4rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.drop_menu::before
+{
+    content: "";
+    border: 10px solid ;
+    border-color: transparent transparent #fff transparent;
+    position: absolute;
+    top: -1rem;
+    left: 1rem;
+}
+.drop_menu li 
+{
+    padding: 1rem;
+    padding-right: 4rem ;
+}
+.nav > li > a:hover,
+.nav > li > .sub_nav:hover
+{
+    color: white;
+    background-color: #2da5da;
+}
+.nav > li:nth-of-type(3):hover + .drop_menu
+{
+    display: block;
+}
+.nav > li:nth-child(3):hover + .drop_menu
+{
+    display: block;
+}
