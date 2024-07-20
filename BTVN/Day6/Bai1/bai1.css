@@ -69,11 +69,12 @@ form
     border: 1px solid #dddddd;
     
 }
-.input:hover input , .input:hover select, .input textarea:hover ,.input input:active, textarea:active
+.input input:hover , .input select:hover, .input textarea:hover ,.input input:active, textarea:active
 {
     border: 1px solid #333333;
 }
-.input:not(.input_textarea):hover .input_icon i, 
+.input:not(.input_textarea) input:hover ~ .input_icon i, 
+.input select:hover ~ .input_icon i,
 .input_textarea textarea:hover ~ .input_icon i  , 
 .input input:focus + .input_icon i, 
 textarea:focus + .input_icon i
@@ -165,6 +166,7 @@ button
     color: white;
     background-color: red;
     border: none;
+    cursor: pointer;
 }
 #coppy
 {
