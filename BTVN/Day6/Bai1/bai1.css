@@ -30,8 +30,6 @@ h2
 }
 p
 {
-    /* margin-bottom: 1rem; */
-    font-family: "Lato";
     font-size: .9rem;
     margin-right: 1rem;
 }
@@ -68,9 +66,12 @@ form
     padding: .75rem 1rem .55rem;
     padding-right: 2rem;
     border: 1px solid #dddddd;
-    
 }
-.input input:hover , .input select:hover, .input textarea:hover ,.input input:active, textarea:active
+.input input:hover, 
+.input select:hover, 
+.input textarea:hover,
+.input input:active,
+textarea:active
 {
     border: 1px solid #333333;
 }
@@ -200,12 +201,11 @@ button
     display: none;
 }
   
-  /* Show the checkmark when checked */
+  
 .form_footer input:checked + label .checkmark:after {
     display: block;
 }
   
-  /* Style the checkmark/indicator */
 .checkmark:after {
     left: 6px;
     width: 5px;

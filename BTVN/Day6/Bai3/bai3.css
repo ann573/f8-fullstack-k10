@@ -12,7 +12,8 @@ header
     align-items: center;
     position: relative;
 }
-img {
+img 
+{
     width: 20vh;
 }
 .btn_category
