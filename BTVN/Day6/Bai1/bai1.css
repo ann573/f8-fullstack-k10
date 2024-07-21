@@ -82,7 +82,8 @@ textarea:active
 .input select:hover ~ .input_icon i,
 .input_textarea textarea:hover ~ .input_icon i  , 
 .input input:focus + .input_icon i, 
-textarea:focus + .input_icon i
+.input textarea:focus ~ .input_icon i,
+.input select:focus ~ .input_icon i
 {
     background-color: #333333;
 }
