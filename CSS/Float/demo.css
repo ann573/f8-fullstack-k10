@@ -1,0 +1,22 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+.box{
+    border: 1px solid red;
+    overflow: hidden;
+    padding: 1rem;
+    width: 100%;
+    margin: 2rem;
+}
+img
+{
+    float: left;
+    margin-right: 1rem;
+    border-radius: 50%;
+    shape-outside: ellipse()
+}
+
+
+

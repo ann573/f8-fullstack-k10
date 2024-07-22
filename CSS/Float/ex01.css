@@ -1,0 +1,50 @@
+/* 
+    Thuoc tinh float: Trôi các phần tử html về phía bên trái, bên phải thành phần cha
+    - none --> Không trôi
+    - left --> Bên trái
+    - right --> Bên phải
+
+Thuoc tinh clear: Khac phuc tu dong troi cua float
+- left
+- right
+- both
+*/
+.box 
+{
+    width: 400px;
+    margin: 30px auto;
+    border: 1px solid red;
+    overflow: auto;
+}
+.block-1
+{
+    background-color: green;
+    width: 100px;
+    height: 50px;
+    float: left;
+}
+.block-2
+{
+    background-color: blueviolet;
+    width: 100px;
+    height: 80px;
+    float: left;
+}
+.block-3
+{
+    background-color: yellow;
+    width: 100px;
+    height: 70px;
+    float: left;
+}
+.block-4
+{
+    /* width: 30px; */
+    background-color: blue;
+    height: 60px;
+    
+}
+.clear
+{
+    clear: both;
+}

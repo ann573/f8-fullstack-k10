@@ -28,12 +28,12 @@ a, .sub_nav
 {
     color: #666;
     text-decoration: none;
-    padding: .44rem .36rem;
+    padding: .5rem .5rem;
     cursor: pointer;
 }
 li:not(.none,.drop_nav_menu)
 {
-    padding: .8rem;
+    padding: .8rem .45rem;
     border-left: 1px solid #666;
     border-top: 1px solid #666;
     border-bottom: 1px solid #666;
@@ -81,11 +81,7 @@ li:not(.none,.drop_nav_menu)
     color: white;
     background-color: #2da5da;
 }
-.nav > li:nth-of-type(3):hover + .drop_menu
-{
-    display: block;
-}
-.nav > li:nth-child(3):hover + .drop_menu
+.nav > li:nth-of-type(3):hover  .drop_menu
 {
     display: block;
 }

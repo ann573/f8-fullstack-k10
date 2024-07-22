@@ -1,0 +1,58 @@
+/* 
+    - list-style-type: Kieu danh sach
+    - list-style-position: Vi tri cua kieu danh sach: outside || intside
+    - list-style-image: Nen thay the bang background ket hop voi before, after
+    - list-style: none position image
+*/
+*
+{
+    padding: 0;
+    margin: 0;
+}
+/* .box    
+{
+    border: 1px solid red;
+    width: 200px;
+    margin: 30px auto;
+}
+.menu
+{
+    list-style-type: ; 
+    list-style-position: inside;
+} */
+nav 
+{
+    margin: 1rem;
+    margin-right: 7rem;
+}
+ul 
+{
+    list-style: none;
+    font-size: 0;
+}
+li
+{
+    color: white;
+    background-color: green;
+    display: inline-block;
+    font-size: 1rem;
+}
+li + li 
+{
+    border-left:1px solid white ;
+}
+li:hover
+{
+    background-color: red;
+}
+nav
+{
+    background-color: green;
+}
+a
+{
+    display: inline-block;
+    padding: .5rem 2rem;
+    text-decoration: none;
+    color: white;
+}
