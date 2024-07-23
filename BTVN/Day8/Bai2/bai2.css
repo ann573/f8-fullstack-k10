@@ -1,0 +1,10 @@
+@import url(https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&display=swap);
+*
+{
+    font-family: Asap;
+}
+body 
+{
+    background: url(https://www.cocoichibanya.vn/wp-content/uploads/2020/10/55.jpg) no-repeat;
+    background-size: 100%;
+}

@@ -94,10 +94,10 @@ input:not(input[name="remember"])
     content: "";
     position: absolute;
     display: none;
-    left: -2.15rem;
+    left: -3.05rem;
     bottom: .5rem;
     width: 3px;
-    height: 10px;
+    height: 8px;
     border: solid black;
     border-width: 0 2px 2px 0;
     -webkit-transform: rotate(45deg);
