@@ -81,7 +81,11 @@ li:not(.none,.drop_nav_menu)
     color: white;
     background-color: #2da5da;
 }
-.nav > li:nth-of-type(3):hover  .drop_menu
+.nav > li:nth-of-type(3) .sub_nav:hover  .drop_menu
 {
     display: block;
+}
+.drop_menu li:hover 
+{
+    opacity: .6;
 }
