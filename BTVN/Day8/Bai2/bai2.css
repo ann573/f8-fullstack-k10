@@ -16,7 +16,7 @@ body
 }
 .content_container
 {
-    width: 60%;
+    width: 55%;
     height: 40vh;
     background: url(https://www.cocoichibanya.vn/wp-content/uploads/2020/10/55.jpg) no-repeat;
     position: relative;
@@ -60,7 +60,7 @@ ul
     list-style: none;
     display: flex;
     gap: 1rem;
-    margin-left: 23rem;
+    margin-left: 25rem;
     margin-top: .5rem;
 }
 ul li:first-child
