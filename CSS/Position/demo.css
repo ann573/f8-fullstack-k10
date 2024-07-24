@@ -1,0 +1,58 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.blur
+{
+    background-color: rgba(0, 0, 0, 0.368);
+    width: auto;
+    height: auto;
+    position: absolute;
+    inset: 0;
+}
+.open
+{
+    /* padding: .5rem; */
+    background-image: linear-gradient(to right, blue, red);
+    cursor: pointer;
+    padding: 1px 2px;
+    border-radius: 5px;
+}
+.close
+{
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    z-index: 3;
+    cursor: pointer;
+    padding: 1rem;
+}
+.modal
+{
+    position: absolute;
+    width: 400px;
+    background-color: white;
+    z-index: 1;
+    margin: 100px auto;
+    right: 0;
+    left: 0;
+    padding: 1rem;
+}
+#cbx:checked + label + label .blur
+{
+    display: block;
+}
+#cbx:checked ~ .modal
+{
+    display: block;
+}
+/* #modal:checked~ .modal
+{
+    display: none;
+}
+#modal:checked ~ .blur
+{
+    display: none;
+} */

@@ -81,9 +81,29 @@ li:not(.none,.drop_nav_menu)
     color: white;
     background-color: #2da5da;
 }
-.nav > li:nth-of-type(3) .sub_nav:hover  .drop_menu
+.nav >li:nth-of-type(3) .sub_nav::after
+{
+    content: "";
+    border-top: 5px solid transparent;
+    width: 110px;
+    height: 5px;
+    position: absolute;
+    top: 3rem;
+    left: 11.8rem;  
+}
+.nav > li:nth-of-type(3)
+{
+    cursor: pointer;
+}
+.nav > li:nth-of-type(3):hover  .sub_nav .drop_menu
 {
     display: block;
+}
+.nav > li:nth-of-type(3):hover span 
+{
+    background-color: #2da5da;
+    color: white;
+    cursor: pointer;
 }
 .drop_menu li:hover 
 {

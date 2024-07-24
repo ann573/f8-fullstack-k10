@@ -28,13 +28,14 @@ body
     left: 3rem;
     bottom: -2rem;
 }
-h3
+h1
 {
     text-transform: uppercase;
     color: white;
     position: absolute;
     bottom: 2.5rem;
     left: 10.5rem;
+    font-size: medium;
 }
 .about
 {
