@@ -33,7 +33,7 @@ h3
     text-transform: uppercase;
     color: white;
     position: absolute;
-    bottom: 3rem;
+    bottom: 2.5rem;
     left: 10.5rem;
 }
 .about
@@ -43,7 +43,7 @@ h3
     font-size: 8pt;
     display: flex;
     position: absolute;
-    bottom: 1.5rem;
+    bottom: 1rem;
     left: 10.5rem;
 }
 .about p:nth-child(2)
