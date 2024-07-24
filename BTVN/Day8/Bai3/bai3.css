@@ -1,18 +1,20 @@
+@import url(https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&display=swap);
 *
 {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: Asap,sans-serif;
     --text-color: #443c3a;
 }
 .content_container
 {
-    margin:1rem 3rem ;
+    margin:1rem 9.5rem ;
 }
 h3 
 {
     color: var(--text-color);
+    text-transform: uppercase;
 }
 ul 
 {
@@ -27,6 +29,7 @@ a
 nav
 {
     margin: 1rem 0;
+    margin-right: 3rem;
 }
 nav li
 {
@@ -50,4 +53,74 @@ nav a span
     font-size: 8pt; 
     margin-top: .3rem;
     font-weight: 300;
+}
+nav li:first-child a 
+{
+    color: #fff;
+}
+nav li:first-child
+{
+    background-color: #af7c37;
+}
+.content_box
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.box_dis .box
+{
+    width: 400px;
+    height: 200px;
+    margin-top: 1.3rem; 
+    border-radius: 5px;
+    position: relative;
+}
+.box_dis:hover
+{
+    opacity: .7;
+}
+.box_dis:first-child .box
+{
+    background: url(https://fastly.picsum.photos/id/335/400/200.jpg?hmac=FFaVHLV6szVdjZLTGMUUj6iDTj2-0wuBdKDXzL0j55w) no-repeat;   
+}
+.box_dis:nth-child(2) .box
+{
+    background: url(https://fastly.picsum.photos/id/476/400/200.jpg?hmac=luFxPBh7Pz2npzt6bwQn6Npq6UsIPjun-m41YbU2Sw8) no-repeat;   
+}
+.box_dis:nth-child(3) .box
+{
+    background: url(https://fastly.picsum.photos/id/716/400/200.jpg?hmac=O3ZaweeRAe-pm_43GEZ5kHKnbGAUlJo94EiXhfbOx5E) no-repeat;   
+}
+.box_dis:nth-child(4) .box
+{
+    background: url(https://fastly.picsum.photos/id/992/400/200.jpg?hmac=QXJkgGP1ar9FWI2hdticPXO2gupD1QGQ9-k6WM0ofGo) no-repeat;   
+}
+.box_dis:nth-child(5) .box
+{
+    background: url(https://fastly.picsum.photos/id/281/400/200.jpg?hmac=j6PA4XgEN3V87joaaJRd7davYHNO7D1_JHsjGYZUrfI) no-repeat;   
+}
+.box_dis:nth-child(6) .box
+{
+    background: url(https://fastly.picsum.photos/id/210/400/200.jpg?hmac=eQ2i1itTVwcnWhgqZm3kstv-YyVjUYEniCfGLuBMxf0) no-repeat;   
+}
+.box_dis .box h4 
+{
+    color: #fff;
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    font-size: larger;
+}
+.box_dis .box p
+{
+    color: #fff;
+    position: absolute;
+    bottom: 2rem;
+    left: 2rem;
+}
+.box_dis .box p span
+{
+    font-size: large;
+    font-weight: 700;
 }

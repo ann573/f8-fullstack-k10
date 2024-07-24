@@ -1,10 +1,71 @@
+
 @import url(https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&display=swap);
 *
 {
-    font-family: Asap;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Asap,sans-serif;
 }
-body 
+body
 {
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    flex-direction: column;
+}
+.content_container
+{
+    width: 60%;
+    height: 40vh;
     background: url(https://www.cocoichibanya.vn/wp-content/uploads/2020/10/55.jpg) no-repeat;
-    background-size: 100%;
+    position: relative;
+}
+.logo img
+{
+    width: 12%;
+    position: absolute;
+    left: 3rem;
+    bottom: -2rem;
+}
+h3
+{
+    text-transform: uppercase;
+    color: white;
+    position: absolute;
+    bottom: 3rem;
+    left: 10.5rem;
+}
+.about
+{
+    text-transform: uppercase;
+    color: white;
+    font-size: 8pt;
+    display: flex;
+    position: absolute;
+    bottom: 1.5rem;
+    left: 10.5rem;
+}
+.about p:nth-child(2)
+{
+    margin-left: 10px;
+}
+span
+{
+    font-size: larger;
+    font-weight: 700;
+}
+ul 
+{
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin-left: 23rem;
+    margin-top: .5rem;
+}
+ul li:first-child
+{
+    color: #dc5e55;
+    padding-bottom: .5rem;
+    border-bottom: 2px solid #dc5e55;
 }
