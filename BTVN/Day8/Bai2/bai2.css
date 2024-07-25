@@ -5,7 +5,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Asap,sans-serif;
+    font-family: Asap, sans-serif;
 }
 body
 {
@@ -64,8 +64,13 @@ ul
     margin-left: 25rem;
     margin-top: .5rem;
 }
-ul li:first-child
+ul li 
 {
+    user-select: none;
+    cursor: pointer;
+}
+ul li:hover
+{ 
     color: #dc5e55;
     padding-bottom: .5rem;
     border-bottom: 2px solid #dc5e55;
