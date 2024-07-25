@@ -68,6 +68,7 @@ ul li
 {
     user-select: none;
     cursor: pointer;
+    font-weight: 600;
 }
 ul li:hover
 { 
