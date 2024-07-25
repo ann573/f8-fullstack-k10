@@ -26,19 +26,19 @@ a
 {
     text-decoration: none;
 }
-nav
+ul
 {
     margin: 1rem 0;
     margin-right: 3rem;
 }
-nav li
+ul li
 {
     background-color: #e5e5e5;
     padding: .5rem 1.5rem;
     text-align: center;
     border-radius: 50px;
 }
-nav li a    
+ul li a    
 {
     /* background-color: #e5e5e5; */
     color: var(--text-color);
@@ -46,7 +46,7 @@ nav li a
     font-weight: 700;
     /* padding: .7rem; */
 }
-nav a span 
+ul a span 
 {
     display: block;
     font-style: italic;
@@ -54,11 +54,11 @@ nav a span
     margin-top: .3rem;
     font-weight: 300;
 }
-nav li:first-child a 
+ul li:first-child a 
 {
     color: #fff;
 }
-nav li:first-child
+ul li:first-child
 {
     background-color: #af7c37;
 }

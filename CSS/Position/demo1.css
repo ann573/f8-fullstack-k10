@@ -5,6 +5,7 @@ ul
 label
 {
     position: relative;
+    user-select: none;
 }
 label::before
 {
@@ -19,17 +20,21 @@ label::after
 {
     content: "";
     display: inline-block;
-    border: 2px solid green;
-    border-color: green green transparent transparent;
+    border: solid white;
+    border-width: 1px 1px 0 0;
     width: 6px;
     height: 3px;
     rotate: 125deg;
     position: absolute;
-    left: 3px;
-    top: 2px;
+    left: 4px;
+    top: 3px;
     display: none;
 }
 input:checked + label::after
 {
     display: inline-block;
+}
+input:checked + label::before
+{
+    background-color: green;
 }
