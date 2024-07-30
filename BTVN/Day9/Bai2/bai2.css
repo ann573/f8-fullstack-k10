@@ -112,7 +112,7 @@ a i
     padding: .2rem;
     border-radius: 50%;
 }
-a i:hover
+a:hover i
 {
     background-color: #fff;
     color: black;
