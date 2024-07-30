@@ -1,0 +1,156 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+.content_container
+{
+    width: 80%;
+}
+ul
+{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+li
+{
+    position: relative;
+    margin-top: 1rem;
+    margin-right: 1.5rem;
+    width: calc(33.33% - 2rem);
+    border: 1px solid rgba(128, 128, 128, 0.299);
+}
+li .layout
+{
+    padding: 2rem;
+    width: 100%;
+    height: 100%;
+    transition:  background-color 0.3s ease-in-out;
+}
+li .image
+{
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+} 
+li:hover .image
+{
+    transition: opacity .5s ease-in-out;
+    opacity: 1;
+}
+li:hover .layout
+{
+    background-color: #956558ba;
+}
+li:hover .layout .content
+{
+    outline: 1px solid #f2f2f5;
+}
+li:hover .icon 
+{
+    opacity: 0;
+}
+li:hover .content h2 
+{
+    color: white;
+    transform: translateY(-5rem);
+}
+li:hover .content p
+{
+    color: white;
+    transform: translateY(-4.5rem);
+}
+li:hover a 
+{
+    opacity: 1;
+}
+li .layout .content
+{
+    outline: 0px solid #f2f2f5;
+    transition: outline .3s ease-in-out;
+    padding: 1rem;
+}
+li .layout .content .icon 
+{
+    color: #ac7e6b;
+    font-size: 40pt;
+    margin-bottom: 2rem;
+    transition: opacity .4s ease-in-out;
+}
+.content_container li:last-child .layout .content .icon i
+{
+    font-size: 32pt;
+}
+li .layout .content p 
+{
+    transition: transform 0.4s ease-in-out, color 0.3s ease-in-out;
+    margin: .7rem 0 1rem;
+}
+a
+{
+    color: #fff;
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0;
+}
+a i 
+{
+    border: 1px solid #fff;
+    padding: .2rem;
+    border-radius: 50%;
+}
+a i:hover
+{
+    background-color: #fff;
+    color: black;
+}
+li:first-child  .image
+{
+    background: url(https://fastly.picsum.photos/id/986/400/350.jpg?hmac=qsyZ8mmGTwKGqAbhzEaVPWVOtXe9Ez-iogKewnIsTYQ) no-repeat  0 0/cover;
+}
+li:nth-child(2) .image
+{
+    background: url(https://fastly.picsum.photos/id/474/400/350.jpg?hmac=4LLLY5K_uSGr60g6XcRaMtu59vK4-jH0yXT_LZxO6gQ) no-repeat  0 0/cover;
+}
+li:nth-child(3) .image
+{
+    background: url(https://fastly.picsum.photos/id/312/400/350.jpg?hmac=TtWVKu8m_Mn4Zue8FlYmajfu0ukp17nj72fBymNaPpw) no-repeat  0 0/cover;
+}
+li:nth-child(4) .image
+{
+    background: url(https://fastly.picsum.photos/id/501/400/350.jpg?hmac=O3SexbRXUg_lSu6JvzZSIYEzZFl25c-vEfrPx9XmbLU) no-repeat  0 0/cover;
+}
+li:nth-child(5) .image
+{
+    background: url(https://fastly.picsum.photos/id/957/400/350.jpg?hmac=gg7nn8fI3_VTIUZB7HfPckUa6F_JdbHHV_pbKP6MWw4) no-repeat  0 0/cover;
+}
+li:nth-child(6) .image
+{
+    background: url(https://fastly.picsum.photos/id/1068/400/350.jpg?hmac=igeQGY0AxVlIX0FZxPELNh2AEAyBhqlviMLEva5fNO8) no-repeat  0 0/cover;
+}
+li .content h2
+{
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* Khi bỏ hover, đặt lại các thuộc tính */
+li .content h2 {
+    transform: translateY(0);
+}
+
+li .content p {
+    transform: translateY(0);
+}

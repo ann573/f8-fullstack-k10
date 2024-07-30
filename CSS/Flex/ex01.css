@@ -1,0 +1,93 @@
+/* 
+    Các thuộc tính trong nhóm flex container
+    - display: flex|inline-flex --> Kích hoạt flexbox
+    - flex-direction: Chọn hướng cho trục chính
+        + row --> Mặc định
+        + row-reverse --> Nằm ngang nhưng mà đảo ngược
+        + column --> Hướng nằm dọc
+        + column-reverse --> Nằm dọc đảo ngược
+    - justify-content: Căn chỉnh các item theo hướng song song với trục chính
+        + flex-start
+        + flex-end
+        + center
+        + space-around
+        + space-between
+        + space-evenly
+        + start
+        + end
+    - align-item:  Căn chỉnh các item theo hướng song song với trục cross
+        + flex-start
+        + flex-end
+        + center
+        + baseline
+        + stretch --> Mặc định
+    - flex-wrap --> wrap các item
+        + nowrap --> Mặc định
+        + wrap 
+        + wrap-reverse
+    - align-content --> Điều chỉnh các hàng || cột theo hướng vuông góc với
+    trục chính (Chỉ áp dụng khi có nhiều hàng hoặc cột):
+        + stretch 
+        + flex-start
+        + flex-end
+        + center
+        + space-around
+        + space-between
+        + space-evenly
+        + start
+        + end
+    -gap --> Căn chỉnh khoảng cách giữa các item
+        + row-gap
+        + column-gap: căn chỉnh khoảng cách theo cột
+    - Các thuộc tính trong nhóm flex-item:
+        + flex-grow: numer ==> Lấp đầy khoảng cách còn trống của container
+        + flex-shrink: number ==> Tự động co lại khi kích thước item vượt quá
+        kích thước container (Giá trị mặc định 1)
+        + flex-basis: Thiết lập kích thước ban đầu cho item (bị chặn bời min/max+width/height
+        + flex: grow shrink basis
+        + order: sắp xếp các item theo thứ tự mong muốn
+        + align-self: Căn chỉnh chính nó theo hướng vuông góc với trục chính
+        (giống align-items):
+            + flex-start
+            + flex-end
+            + center
+            + baseline
+            + stretch --> Mặc định
+        */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.box 
+{
+    width: 400px;
+    height: 400px;
+    margin: 30px auto;
+    border: 1px solid red;
+    /* gap: 10px 20px; */
+    display: flex;
+    flex-direction: row;  
+    justify-content: flex-start;
+    /* flex-wrap: wrap; */
+    /* align-content: flex-start; */
+    /* align-items: flex-start; */
+    /* align-self: stretch; */
+}
+.item
+{
+    /* padding: 10px; */
+    background: green;
+    color: white;
+    border: 1px solid #fff;
+    flex-grow: 1;
+    /* flex-shrink: 1; */
+    /* flex-basis: 100px;
+    max-width: 80px; */
+}
+.item:nth-child(5)
+{
+    /* align-self: center; */
+    text-align: center;
+    align-content: center;
+}

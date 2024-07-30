@@ -89,6 +89,7 @@ input:not(input[name="remember"])
     border: 2px solid #aeaeae;
     cursor: pointer;
     border-radius: 3px;
+    float: left;
 }
 .checkmark::before {
     content: "";
@@ -123,6 +124,8 @@ input:not(input[name="remember"])
 {
     font-size: 10pt;
     margin-bottom: -1px;
+    margin-left: 1px;
+    user-select: none;
 }
 .annotation a 
 {

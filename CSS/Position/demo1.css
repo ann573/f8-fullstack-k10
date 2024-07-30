@@ -15,6 +15,7 @@ label::before
     border: 2px solid green;
     width: 12px;
     height: 12px;
+    float: left;
 }
 label::after
 {
@@ -22,11 +23,11 @@ label::after
     display: inline-block;
     border: solid white;
     border-width: 1px 1px 0 0;
-    width: 6px;
-    height: 3px;
+    width: 10px;
+    height: 5px;
     rotate: 125deg;
     position: absolute;
-    left: 4px;
+    left: -18px;
     top: 3px;
     display: none;
 }

@@ -11,10 +11,21 @@
 {
     margin:1rem 9.5rem ;
 }
+.header
+{
+    position: relative;
+}
 h3 
 {
     color: var(--text-color);
     text-transform: uppercase;
+}
+hr
+{
+    width: 64%;
+    position: absolute;
+    left: 35%;
+    bottom: .5rem;
 }
 ul 
 {
