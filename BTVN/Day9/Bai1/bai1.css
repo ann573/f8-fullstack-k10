@@ -160,8 +160,9 @@
     font-weight: 700;
     color: transparent;
     background: url('https://fastly.picsum.photos/id/106/300/400.jpg?hmac=SLpWD_VPIFZRRo64PcV75byzYp_mc9YzN3OExGvm5L8') no-repeat center;
-    /* -webkit-background-clip: text; */
+    -webkit-background-clip: text;
     background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .sec_img .overlay span:nth-child(2)
 {
@@ -172,6 +173,8 @@
     font-weight: 700;
     color: transparent;
     background: url('https://fastly.picsum.photos/id/106/300/400.jpg?hmac=SLpWD_VPIFZRRo64PcV75byzYp_mc9YzN3OExGvm5L8') no-repeat center;
-    /* -webkit-background-clip: text; */
+    -webkit-background-clip: text;
     background-clip: text;
+    -webkit-text-fill-color: transparent;
+
 }
