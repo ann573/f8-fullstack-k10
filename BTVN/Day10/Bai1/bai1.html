@@ -44,18 +44,5 @@
         </ul>
     </div>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const check = document.getElementById('check');
-            const zero = document.getElementById('zero');
-            function updateRadio() {
-                if (!check.checked) {
-                    zero.checked = true;
-                }
-            }
-            check.addEventListener('change', updateRadio);
-            updateRadio();
-        });
-    </script>
 </body>
 </html>
