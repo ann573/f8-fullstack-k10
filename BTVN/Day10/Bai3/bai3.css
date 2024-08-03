@@ -22,7 +22,7 @@ body
     position: relative;
     transition: transform .3s ease;
 }   
-.cover
+.outline
 {
     width: 300px;
     height: 200px;
