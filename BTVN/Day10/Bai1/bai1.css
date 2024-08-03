@@ -1,0 +1,157 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: sans-serif;
+}
+.content
+{
+    background-color: #12a1e5;
+    height: 100vh;
+    overflow: hidden;
+}
+.overlay
+{
+    position: relative;
+    user-select: none;
+}
+.overlay::after
+{
+    content: "";
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    border-radius: 50%;
+    position: fixed;
+    left: -75px;
+    top: -75px;
+    transition: .2s linear;
+    transition-property: scale;
+}
+.icon
+{
+    width: 20px;
+    height: 0;
+    position: relative;
+    top: 1.5rem;
+    left: 1.2rem;
+    z-index: 2;
+    cursor: pointer;
+    border: solid #12a1e5;
+    border-width: 3px 0 0 0;
+    transition: rotate .4s ease;
+    border-radius: 1px;
+}
+.icon::before
+{
+    content: "";
+    width: 20px;
+    height: 0;
+    position: absolute;
+    top: -10px;
+    cursor: pointer;
+    border: solid #12a1e5;
+    border-width: 3px 0 0 0;
+    padding-bottom: 1rem;
+    border-radius: 1px;
+    transition: .4s ease;
+    transition-property: rotate, transform;
+}
+.icon::after
+{
+    content: "";
+    width: 20px;
+    height: 0;
+    position: absolute;
+    top: 5px;
+    cursor: pointer;
+    border: solid #12a1e5;
+    border-width: 3px 0 0 0;
+    border-radius: 1px;
+    transition: .4s ease;
+    transition-property: rotate, transform;
+}
+#check:checked + .overlay label .icon 
+{
+    rotate: 180deg;
+}
+#check:checked + .overlay label .icon::before
+{
+    width: 13.5px;
+    transform: translate(4px , 1.1px);
+    rotate: 30deg;
+}
+#check:checked + .overlay label  .icon::after
+{
+    width: 13px;
+    transform: translate(8px, .4px);
+    rotate: -30deg;
+}
+#check:checked +.overlay::after
+{
+    scale: 23;
+}
+#check:checked ~ ul li 
+{
+    transform: translateX(0);
+    opacity: 1;
+}
+.header
+{
+    color: #fff;
+    float: right;
+    position: absolute;
+    right: 10rem;
+    top: 10rem;
+}
+.header h2, .header p
+{
+    float: right;
+    margin: .5rem 0;
+}
+.header p
+{
+    font-weight: 100;
+}
+.header p span
+{
+    font-size: 8pt;
+    font-weight: 100;
+}
+.clear
+{
+    clear: both;
+}
+ul
+{
+    position: absolute;
+    top: 5rem;
+}
+ul li
+{
+    opacity: 0;
+    padding: .1rem 3rem;
+    display: block;
+    color: #12a1e5;
+    margin-bottom: 1rem;
+    border-radius: 1px;
+    transition: .5s ease;
+    transition-property: background-color, color;
+    transform: translateX(-110px);
+} 
+ul li label
+{
+    user-select: none;
+    cursor: pointer;
+}
+ul input:checked + li
+{
+    background-color: #dcdcdc;
+    color: black;
+}
+ul input
+{
+    checked: false;
+}

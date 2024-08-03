@@ -1,0 +1,35 @@
+/* 
+Thuộc tính transition: Delay quá tình chuyển động của các thuộc tính css, nhằm tạo ra các hiệu ứng
+Lưu ý: Chỉ áp dụng với các thuộc tính có giá trị là số
+    - transition-property: Tên thuộc tính css ==> Chọn thuộc tính có transition 
+    - transition-duration: value + unit (s,ms) ==> Thiết lập thời gian hoàn thành chuyển động
+    - transition-delay: Thời gian trễ trc khi hiệu ứng chuyển động
+    - transition-timing-function: Thiết lập tốc độ di chuyển
+        + ease => Chậm - Nhanh Chậm
+        + ease-in => Chậm - Nhanh
+        + ease-out => Nhanh - chậm
+        + ease-in-out => Chậm - Nhanh - Chậm
+        + linear => Chuyển động đều     
+        + https://cubic-bezier.com/#.06,1.29,.8,.54
+    -transition: property duration delay timing-function
+*/
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.box
+{
+    border: 1px solid red;
+    height: 300px;
+}
+.box h2 
+{
+    transition: padding-left .3s ease;
+}
+.box:hover h2 
+{
+    padding-left: 100px;
+    transition-delay: 1s;
+}

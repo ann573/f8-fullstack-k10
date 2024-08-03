@@ -1,0 +1,45 @@
+/* 
+    Thuộc tính transform: Thay đổi hình dạng ban đầu của 1 phần tử
+    - Xoay: 
+        + transform: rotate(angle) xoay theo truc Z
+        + transform: rotateX(angle) 
+        + transform: rotateY(angle) 
+    - Nghiêng 
+        + transform: skew( angleX, angleY)
+        + transform: skewX
+        + transform: skewY
+    - Phóng to, thu nhỏ
+        + transform: scale(valueX, valueY)
+        + transform: scaleX
+        + transform: scaleY
+    - Di chuyển
+        + transform: transalteX(value)
+        + transform: transalteY(value)
+        + transform: transalte(value value)
+    Thuộc tính được tách ra:
+        - rotate
+        - scale
+        - translate
+*/
+.container
+{
+    width: 300px;
+    height: 300px;
+    border: 1px solid red;
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box
+{
+    width: 100px;
+    height: 100px;
+    background: green;
+    transition: all 1s ease;
+    transform-origin: top;
+}
+.box:hover
+{
+    rotate: -45deg;
+}

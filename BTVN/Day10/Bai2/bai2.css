@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #dcdcdc;
+}
+
+.content {
+    width: 60%;
+    margin: 40px auto;
+    position: relative;
+    perspective: 1000px;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    padding: 1.5rem 1rem;
+    background-color: #fff;
+    border: 1px solid #dcdcdc;
+    transform-style: preserve-3d;
+}
+
+ul li label {
+    padding: 1rem; 
+    cursor: pointer;
+}
+
+ul li label:hover {
+    background-color: #3a93cd;
+    color: white;
+}
+
+#first:checked ~ ul li:first-child label,
+#sec:checked ~ ul li:nth-child(2) label,
+#third:checked ~ ul li:nth-child(3) label,
+#fourth:checked ~ ul li:nth-child(4) label {
+    background-color: #3a93cd;
+    color: white;
+}
+
+.paragaph {
+    background-color: #fff;
+    width: 90.8%;
+    padding: 2rem;
+    overflow-x: scroll; 
+    position: absolute;
+    left: 1px;
+    transform: rotateX(-90deg);
+    opacity: 0;
+    transform-origin: top;
+    transition: transform .3s ease-out, opacity .3s ease-out;
+}
+
+#first:checked ~ .f_paragaph,
+#sec:checked ~ .s_paragaph,
+#third:checked ~ .t_paragaph,
+#fourth:checked ~ .e_paragaph {
+    transform: rotateX(0deg);
+    opacity: 1;
+    transition-delay: .2s;
+}
+
+p {
+    width: 110%;
+}

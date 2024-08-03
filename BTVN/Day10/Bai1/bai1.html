@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bai1.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+    <title>Document</title>
+</head>
+<body>
+    <div class="content">
+        <input type="checkbox" id="check" hidden>
+        <div class="overlay">
+            <label for="check">
+                <div class="icon"></div>
+            </label>
+            <div class="header">
+                <h2> #1 burger menu</h2>
+                <div class="clear"></div>
+                <p>
+                    <span>inspired by</span> google material design
+                </p>
+            </div>
+        </div>
+        <ul>
+            <input hidden name="radio" type="radio" id="zero">
+            <input hidden name="radio" type="radio" id="first">
+            <li>
+                <label for="first">home</label>
+            </li>
+            <input hidden name="radio" type="radio" id="sec">
+            <li>
+                <label for="sec">about</label>
+            </li>
+            <input hidden name="radio" type="radio" id="third">
+            <li>
+                <label for="third">portfolio</label>
+            </li>
+            <input hidden name="radio" type="radio" id="fourth">
+            <li>
+                <label for="fourth">contact</label>
+            </li>
+        </ul>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const check = document.getElementById('check');
+            const zero = document.getElementById('zero');
+            function updateRadio() {
+                if (!check.checked) {
+                    zero.checked = true;
+                }
+            }
+            check.addEventListener('change', updateRadio);
+            updateRadio();
+        });
+    </script>
+</body>
+</html>
