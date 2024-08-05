@@ -1,0 +1,13 @@
+/* 
+    Thuộc tính display: Thay đổi chế độ hiển thị của thẻ html. Không giữ khoảng trống
+    - none ==> Ẩn (mất không gian)
+    - block ==> Chuyển về dạng thẻ block
+    - inline ==> Chuyển về dạng thẻ inline 
+    - inline-block ==> Kết hợp giữa inline và block
+    
+    Thuộc tính visibility ==> Ẩn / Hiện. Vẫn giữ khoảng trống nhưng tính khả dụng = 0
+    - visible --> Hiện 
+    - hidden --> Ẩn
+
+    Thuộc tính opacity ==> Làm trong suốt các phần tử 
+*/

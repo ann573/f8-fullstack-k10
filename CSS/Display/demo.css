@@ -1,0 +1,37 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.layout
+{
+    background-color: rgba(128, 128, 128, 0.495);
+    position: absolute;
+    inset: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: 1s ease;
+    transition-property: visibility, opacity;
+
+}
+.menu
+{
+    position: absolute;
+    background-color: #fff;
+    width: 20vw;
+    height: 100vh;
+    top: 0;
+    padding: 1rem;
+    transform: translateX(-20vw);
+    transition: transform 1s ease;
+}
+#open:checked ~ label .layout
+{
+    opacity: 1;
+    visibility: visible;
+}
+#open:checked ~ .menu 
+{
+    transform: translateX(0);
+}
