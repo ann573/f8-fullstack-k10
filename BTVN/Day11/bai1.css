@@ -118,6 +118,7 @@ header .shopping-cart span
     font-weight: 600;
     top: -1.5rem;
     left: 1rem;
+    box-shadow: #f54b4b5c 0px 8px 24px;
 }
 /* First section */
 main .first_section:first-of-type
