@@ -24,28 +24,30 @@ section
 {
     margin: 3rem 8.5rem 5rem;
 }
-header nav ul
+header ul
 {
     display: flex;
     position: relative;
     bottom: 8px;
     left: 15px;
 }
-header nav ul li 
+header li 
 {
     margin: 1rem;
 }
-header nav ul li:hover a
+header li:hover a
 {
     color: #F55253;
 }
-header nav ul li:first-child a
+header li:first-child a
 {
     color: #F55253;
 }
-header nav ul li a 
+header li a 
 {
-    color: var(--text-color)
+    color: var(--text-color);
+    font-weight: 500;
+    font-size: 14px;
 }
 header .logo
 {
@@ -87,12 +89,12 @@ header .search .search_input label
     transition: .3s ease;
     transition-property: opacity, visibility;
 }
-header .search .search_input input:focus + label
+header input:focus + label
 {
     opacity: 0;
     visibility: hidden;
 }
-header .search .search_input input:not(:placeholder-shown) + label
+header input:not(:placeholder-shown) + label
 {
     opacity: 0;
     visibility: hidden;
@@ -161,6 +163,12 @@ main .first_section .introduce p
 {
     display: flex;
     align-items: center;
+}
+.introduce .order img
+{
+    border-radius: 50%;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    margin-right: 1rem;
 }
 .btn
 {
